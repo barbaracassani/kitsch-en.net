@@ -5,6 +5,7 @@ import { Post, Posts } from "../../types/posts";
 import PostComponent from "./components/Post";
 import { RootState } from "../../store";
 import { StyledBlogHome } from "./BlogHomeStyle";
+import H1 from "../common/components/header/H1";
 
 function BlogHome(props: ComponentProps<any>) {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function BlogHome(props: ComponentProps<any>) {
   return (
     <>
       <StyledBlogHome>
+        <H1>Blog</H1>
         {posts &&
           posts.length &&
           posts.map((post: Post) => {

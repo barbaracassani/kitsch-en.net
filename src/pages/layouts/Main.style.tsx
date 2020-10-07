@@ -8,7 +8,8 @@ export const StyledMain: StyledComponent<any, any> = styled.div`
   h5 {
     font-family: "AlegreyaSansThin";
   }
-  p {
+  p,
+  span {
     font-family: "NunitoRegular";
   }
   .content {

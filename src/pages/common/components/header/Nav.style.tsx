@@ -8,7 +8,7 @@ export interface Props {
 
 export const StyledNav = styled.nav`
   color: ${(props) => props.theme.white};
-  margin-right: ${(props) => props.theme.bigGrout};
+  margin-right: ${(props) => props.theme.mediumGrout};
   margin-bottom: ${(props) => props.theme.smallGrout};
   align-self: flex-end;
   @media ${breakpoints.small} {

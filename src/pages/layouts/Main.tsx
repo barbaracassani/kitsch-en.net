@@ -8,13 +8,15 @@ import { StyledMain } from "./Main.style";
 export const MainLayout = (props: { children: any }) => {
   return (
     <StyledMain>
-      <Header>
-        <Logo />
-        <Nav />
-      </Header>
       <div className="content">
         <Image />
-        <div className="dynamicContent">{props.children}</div>
+        <div className="dynamicContent">
+          <Header>
+            <Logo />
+            <Nav />
+          </Header>
+          {props.children}
+        </div>
       </div>
     </StyledMain>
   );

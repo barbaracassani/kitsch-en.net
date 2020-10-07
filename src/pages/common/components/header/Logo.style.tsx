@@ -9,7 +9,7 @@ export const StyledLogo = styled.div`
     text-decoration: none;
   }
   text-transform: uppercase;
-  margin-left: ${(props) => props.theme.smallGrout};
+  margin-left: ${(props) => props.theme.mediumGrout};
   margin-top: ${(props) => props.theme.smallGrout};
   margin-bottom: ${(props) => props.theme.smallGrout};
   font-family: "AlegreyaSansThin";

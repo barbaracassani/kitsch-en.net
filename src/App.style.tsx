@@ -1,11 +1,4 @@
 import { createGlobalStyle, InterpolationFunction } from "styled-components";
-
-import MuliBold from "./assets/fonts/Muli-Bold.woff";
-import MuliRegular from "./assets/fonts/Muli-Regular.woff";
-import MuliSemiBold from "./assets/fonts/Muli-SemiBold.woff";
-import RobotoBold from "./assets/fonts/Roboto-Bold.woff";
-import RobotoCondensedBold from "./assets/fonts/RobotoCondensed-Bold.woff";
-import RobotoCondensedRegular from "./assets/fonts/RobotoCondensed-Regular.woff";
 import AlegreyaSansThin from "./assets/fonts/AlegreyaSansSC-Thin.woff";
 import AlegreyaSansLight from "./assets/fonts/AlegreyaSansSC-Light.woff";
 import NunitoLight from "./assets/fonts/Nunito-Light.woff";
@@ -115,30 +108,6 @@ export const margin35 = (props: any) => `
 `;
 
 export const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: MuliBold;
-    src: url(${MuliBold})
-  }
-  @font-face {
-    font-family: MuliRegular;
-    src: url(${MuliRegular})
-  }
-  @font-face {
-    font-family: MuliSemiBold;
-    src: url(${MuliSemiBold})
-  }
-  @font-face {
-    font-family: RobotoBold;
-    src: url(${RobotoBold})
-  }
-  @font-face {
-    font-family: RobotoCondensedBold;
-    src: url(${RobotoCondensedBold})
-  }
-  @font-face {
-    font-family: RobotoCondensedRegular;
-    src: url(${RobotoCondensedRegular})
-  }
   @font-face {
     font-family: AlegreyaSansThin;
     src: url(${AlegreyaSansThin})
