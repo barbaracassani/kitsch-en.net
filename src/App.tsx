@@ -7,8 +7,9 @@ import { lightTheme } from "./App.style";
 import Header from "./pages/common/components/header/Header";
 import Nav from "./pages/common/components/header/Nav";
 import Logo from "./pages/common/components/header/Logo";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { MainLayout } from "./pages/layouts/Main";
+import BlogPost from "./pages/blog_post/BlogPost";
 
 function App() {
   return (
@@ -16,7 +17,14 @@ function App() {
       <ThemeProvider theme={lightTheme}>
         <MainLayout>
           <Provider store={store}>
-            <BlogHome />
+            <Switch>
+              <Route path="/" exact={true}>
+                <BlogHome />
+              </Route>
+              <Route path={"/blog/:slug"}>
+                <BlogPost />
+              </Route>
+            </Switch>
           </Provider>
         </MainLayout>
       </ThemeProvider>
