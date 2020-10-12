@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { fadeIn } from "../../../App.style";
 
 export const StyledPost = styled.article`
+  ${fadeIn.bind(null, 0.3)}
   margin: calc(${(props) => props.theme.bigGrout} * 3);
   &:first-of-type {
     margin-top: 0;

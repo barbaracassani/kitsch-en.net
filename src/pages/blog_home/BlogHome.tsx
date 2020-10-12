@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getPosts } from "./services/actions";
 import { Post, Posts } from "../../types/posts";
 import PostComponent from "./components/Post";
+import EmptyPost from "./components/EmptyPost";
 import { RootState } from "../../store";
 import { StyledBlogHome } from "./BlogHomeStyle";
 import H1 from "../common/components/header/H1";
@@ -18,6 +19,10 @@ function BlogHome(props: ComponentProps<any>) {
     <>
       <StyledBlogHome>
         <H1>Blog</H1>
+        {(!posts || !posts.length) &&
+          new Array(3).fill("a").map((_, index) => {
+            return <EmptyPost key={index} />;
+          })}
         {posts &&
           posts.length &&
           posts.map((post: Post) => {
