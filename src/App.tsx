@@ -10,6 +10,7 @@ import Logo from "./pages/common/components/header/Logo";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { MainLayout } from "./pages/layouts/Main";
 import BlogPost from "./pages/blog_post/BlogPost";
+import StaticPost from "./pages/static_post/StaticPost";
 
 function App() {
   return (
@@ -23,6 +24,12 @@ function App() {
               </Route>
               <Route path={"/blog/:slug"}>
                 <BlogPost />
+              </Route>
+              <Route path={"/blog/"}>
+                <BlogHome />
+              </Route>
+              <Route path={"/:slug"}>
+                <StaticPost />
               </Route>
             </Switch>
           </Provider>

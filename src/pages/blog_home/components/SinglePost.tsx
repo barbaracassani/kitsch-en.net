@@ -15,7 +15,6 @@ const formt = (date: string, formatStr: string = "EEEE, do MMMM yyyy") => {
 };
 
 const SinglePost = (props: PostProps) => {
-  console.info("here is me", isPost(props), props);
   return (
     <StyledPost>
       {isPost(props) && (

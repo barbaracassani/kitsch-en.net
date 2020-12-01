@@ -10,6 +10,7 @@ export const theme = {
   mediumBigGrout: "18px",
   bigGrout: "37px",
 
+  fontSize10: ".65rem",
   fontSize14: ".9rem",
   fontSize16: "1rem",
   fontSize18: "1.1rem",

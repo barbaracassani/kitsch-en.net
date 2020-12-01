@@ -7,7 +7,9 @@ import { StyledPost } from "./Post.style";
 import H2 from "../../common/components/header/H2";
 import { Link } from "react-router-dom";
 
-interface PostProps extends ComponentProps<any>, PostType {}
+interface PostProps extends ComponentProps<any>, PostType {
+  ref?: string;
+}
 
 const formt = (date: string, formatStr: string = "EEEE, do MMMM yyyy") => {
   return format(new Date(date), formatStr, {
@@ -16,7 +18,6 @@ const formt = (date: string, formatStr: string = "EEEE, do MMMM yyyy") => {
 };
 
 const Post = (props: PostProps) => {
-  console.info("post is ", props);
   return (
     <StyledPost>
       <Link to={`/blog/${props.slug}`}>

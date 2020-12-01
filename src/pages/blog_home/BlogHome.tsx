@@ -1,4 +1,4 @@
-import React, { ComponentProps, useEffect } from "react";
+import React, { ComponentProps, useCallback, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getPosts } from "./services/actions";
 import { Post, Posts } from "../../types/posts";

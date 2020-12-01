@@ -7,6 +7,9 @@ const endpoints = {
   post: (...args: string[]) => {
     return `/posts?slug=${args[0]}`;
   },
+  page: (...args: string[]) => {
+    return `/pages?slug=${args[0]}`;
+  },
 };
 
 export const get = (
