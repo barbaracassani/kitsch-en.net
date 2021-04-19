@@ -87,6 +87,7 @@ export const fadeOutAndLeave: InterpolationFunction<any> = (speed?: number) => `
 export const breakpoints = {
   smallAndMedium: "(max-width: 768px)",
   small: "(max-width: 650px)",
+  big: "(min-width: 769px)",
 };
 
 export const margin25 = (props: any) => `

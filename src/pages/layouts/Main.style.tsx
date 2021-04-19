@@ -1,4 +1,5 @@
 import styled, { StyledComponent } from "styled-components";
+import {breakpoints} from '../../App.style';
 
 export const StyledMain: StyledComponent<any, any> = styled.div`
   h1,
@@ -17,5 +18,8 @@ export const StyledMain: StyledComponent<any, any> = styled.div`
   }
   .dynamicContent {
     width: 50vw;
+    @media ${breakpoints.smallAndMedium} { 
+     width: 100%;
+    }
   }
 `;
