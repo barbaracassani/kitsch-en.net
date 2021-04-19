@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  background-color: ${(props) => props.theme.black};
+  background-color: ${(props) => props.theme.pink};
   width: 100%;
   display: flex;
   justify-content: space-between;
